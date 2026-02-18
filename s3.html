@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food Menu & Ordering</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <head>
+ <style>
+     .navbar {
+            background-color: #050219; /* Primary red-orange */
+            color: #FFFFFF; /* White text */
+        }
+        .navbar-brand {
+            color: #FFFFFF !important;
+        }
+        .nav-link {
+            color: #FFFFFF !important;
+        }
+        .nav-link:hover {
+            color: #FFD700 !important; /* Accent yellow on hover */
+        }
+        
+.card-img-top {
+    width: 100%;
+    height: auto; /* Changed to auto to match image size proportionally */
+    object-fit: cover; /* Ensures image fills the box without distortion, but may not apply fully with auto height */
+    border-radius: 10px; /* Optional: makes images slightly rounded */
+}
+   /* Footer */
+        footer {
+            background-color: #222222; /* Dark gray */
+            color: #FFFFFF;
+        }
+        footer h5 {
+            color: #FFD700; /* Accent yellow for subheadings */
+        }
+        footer a {
+            color: #FFD700; /* Accent for links */
+        }
+        footer a:hover {
+            color: #FF4500; /* Primary on hover */
+        }
+        
+        /* General Buttons (if you add any) */
+        .btn-primary {
+            background-color: #FF4500;
+            border-color: #FF4500;
+        }
+        .btn-primary:hover {
+            background-color: #FFD700;
+            border-color: #FFD700;
+            color: #333333;
+        }
+        
+        /* Cards (for menu items if added later) */
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #FF4500;
+        }
+        .card-title {
+            color: #FF4500;
+        }
+</style>
+
+</head>
+
+</head>
+<body>
+   <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="D:\Divya Sai Fast-Foods\project\images\logo1.jpg" alt="Fast Food Chain Logo" style="height: 60px; margin-right: 10px;"><i><b>
+            Divya Sai Fast Food</b></i> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="s3.html">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="orderform.html">Order Now</a></li>
+                 <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1><i>Welcome to Divya Sai Fast Food Menu</i></h1>
+            <p>Order your favorites online!</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Menu</h2>
+
+            <!-- Noodles -->
+            <h3 class="mb-3">Noodles</h3>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\Chili Garlic Noodles.jpg" class="card-img-top" alt="Veg Noodles">
+                        <div class="card-body">
+                            <h5 class="card-title">Veg Noodles</h5>
+                            <p class="card-text">Delicious vegetable noodles. Price: Rs50/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\veg manchurian noodles.jpg" class="card-img-top" alt="Veg Manchurian Noodles">
+                        <div class="card-body">
+                            <h5 class="card-title">Veg Manchurian Noodles</h5>
+                            <p class="card-text">Spicy veg manchurian noodles. Price: Rs80/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\egg noodles.jpg" class="card-img-top" alt="Egg Noodles">
+                        <div class="card-body">
+                            <h5 class="card-title">Egg Noodles</h5>
+                            <p class="card-text">Egg-based noodles. Price: Rs60/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\chicken noodles.jpg" class="card-img-top" alt="Chicken Noodles">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Noodles</h5>
+                            <p class="card-text">Chicken-infused noodles. Price: Rs90/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fried Rice -->
+            <h3 class="mb-3">Fried Rice</h3>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\veg fried rice.jpg" class="card-img-top" alt="Veg Fried Rice">
+                        <div class="card-body">
+                            <h5 class="card-title">Veg Fried Rice</h5>
+                            <p class="card-text">Vegetable fried rice. Price: Rs80/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\chicken fried rice.jpg" class="card-img-top" alt="Chicken Fried Rice">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Fried Rice</h5>
+                            <p class="card-text">Chicken fried rice. Price: Rs120/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\veg manchurian fried rice.jpg" class="card-img-top" alt="Veg Manchurian Fried Rice">
+                        <div class="card-body">
+                            <h5 class="card-title">Veg Manchurian Fried Rice</h5>
+                            <p class="card-text">Veg manchurian fried rice. Price:Rs100/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\paneer fried rice.jpg" class="card-img-top" alt="Paneer Fried Rice">
+                        <div class="card-body">
+                            <h5 class="card-title">Paneer Fried Rice</h5>
+                            <p class="card-text">Paneer fried rice. Price:Rs120/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\egg fried rice.jpg" class="card-img-top" alt="Egg Fried Rice">
+                        <div class="card-body">
+                            <h5 class="card-title">Egg Fried Rice</h5>
+                            <p class="card-text">Egg fried rice. Price:Rs100/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\chicken manchurian fried rice.jpg" class="card-img-top" alt="Chicken Manchurian Fried Rice">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Manchurian Fried Rice</h5>
+                            <p class="card-text">Chicken manchurian fried rice. Price:Rs160/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rolls -->
+            <h3 class="mb-3">Rolls</h3>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\paneer roll.jpg" class="card-img-top" alt="Paneer Roll">
+                        <div class="card-body">
+                            <h5 class="card-title">Paneer Roll</h5>
+                            <p class="card-text">Paneer roll. Price:Rs80/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\egg roll.jpg" class="card-img-top" alt="Double Egg Roll">
+                        <div class="card-body">
+                            <h5 class="card-title"> Egg Roll</h5>
+                            <p class="card-text">Egg roll. Price: Rs40/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\veg roll.jpg" class="card-img-top" alt="Veg Roll">
+                        <div class="card-body">
+                            <h5 class="card-title">Veg Roll</h5>
+                            <p class="card-text">Vegetable roll. Price: Rs30/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\chicken roll.jpg" class="card-img-top" alt="Chicken Roll">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Roll</h5>
+                            <p class="card-text">Chicken roll. Price: Rs60/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Milkshakes -->
+            <h3 class="mb-3">Milkshakes</h3>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\kitkat milkshake.jpg" class="card-img-top" alt="Kitkat Milkshake">
+                        <div class="card-body">
+                            <h5 class="card-title">Kitkat Milkshake</h5>
+                            <p class="card-text">Kitkat milkshake. Price: Rs80/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\rose milkshake.jpg" class="card-img-top" alt="Rose Milkshake">
+                        <div class="card-body">
+                            <h5 class="card-title">Rose Milkshake</h5>
+                            <p class="card-text">Rose milkshake. Price: Rs70/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\oreo milkshake.jpg" class="card-img-top" alt="Oreo Milkshake">
+                        <div class="card-body">
+                            <h5 class="card-title">Oreo Milkshake</h5>
+                            <p class="card-text">Oreo milkshake. Price: Rs100/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Burgers -->
+            <h3 class="mb-3">Burgers</h3>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\burger.jpg" class="card-img-top" alt="Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Burger</h5>
+                            <p class="card-text">Classic burger. Price: Rs80/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\chicken burger.jpg" class="card-img-top" alt="Chicken Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Burger</h5>
+                            <p class="card-text">Chicken burger. Price: Rs140/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sides -->
+            <h3 class="mb-3">Sides</h3>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\french fries.jpg" class="card-img-top" alt="French Fries">
+                        <div class="card-body">
+                            <h5 class="card-title">French Fries</h5>
+                            <p class="card-text">Crispy golden fries. Price: Rs50/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="D:\Divya Sai Fast-Foods\project\images\sandwich.jpg" class="card-img-top" alt="Sandwich">
+                        <div class="card-body">
+                            <h5 class="card-title">Sandwich</h5>
+                            <p class="card-text">Sandwich. Price: Rs70/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <script>
+    // Enable quantity input when checkbox is checked
+    document.querySelectorAll('.form-check-input[type="checkbox"]').forEach(checkbox => {
+      checkbox.addEventListener('change', function() {
+        const qtyInput = this.closest('.form-check').querySelector('input[type="number"]');
+        qtyInput.disabled = !this.checked;
+        if (!this.checked) qtyInput.value = '';
+      });
+    });
+
+    // Handle form submission
+    function handleOrderSubmission(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+
+      const items = [];
+      document.querySelectorAll('.form-check-input[type="checkbox"]:checked').forEach(checkbox => {
+        const qty = checkbox.closest('.form-check').querySelector('input[type="number"]').value || 1;
+        items.push(`${checkbox.value} - Qty: ${qty}`);
+      });
+
+      if (items.length === 0) {
+        alert('Please select at least one item.');
+        return;
+      }
+
+      alert(`Order placed by ${name} (${email})\n\nItems:\n${items.join('\n')}`);
+    }
+  </script>
+</section>
+
+
+<script>
+function handleOrderSubmission(event) {
+    event.preventDefault(); // Prevent the default form submission
+    // In a real application, you would send the form data to a server here
+    // For this demo, we'll just redirect to a confirmation page
+    window.location.href = 'order confirmation.html'; // Redirect to the confirmation page
+}
+</script>
+
+ <footer class="text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center mb-3">
+                <img src="D:\Divya Sai Fast-Foods\project\images\logo1.jpg" alt="Fast Food Chain Logo" class="img-fluid" style="max-height: 120px;">
+            </div>
+            <div class="col-md-4 text-center mb-3">
+                <h5>Contact Us</h5>
+                <p>Phone:+91 9553337293<br>Email: divyasai21@gmail.com</p>
+            </div>
+            <div class="col-md-4 text-center mb-3">
+                <h5>Address</h5>
+              <p>gonthinavanipalem<br>Visakhapatnam, Andhra Pradesh, 530026</p>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; 2004 Fast Food Chain. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
