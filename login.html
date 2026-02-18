@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Divya Sai Fast Food</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background-color: #050219; /* Primary red-orange */
+            color: #FFFFFF; /* White text */
+        }
+        .navbar-brand {
+            color: #FFFFFF !important;
+        }
+        .nav-link {
+            color: #FFFFFF !important;
+        }
+        .nav-link:hover {
+            color: #FFD700 !important; /* Accent yellow on hover */
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-color: #F8F8F8; /* Light gray background */
+            position: relative;
+        }
+        .hero h1 {
+            color: #eeebf2; /* Primary color for title */
+            font-weight: bold;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .carousel-caption h5 {
+            color: #FFFFFF; /* White for captions */
+            background-color: rgba(255, 69, 0, 0.8); /* Semi-transparent primary for readability */
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .carousel-caption p {
+            color: #FFFFFF;
+        }
+        
+        /* About Us Section */
+        #about {
+            background-color: #FFFFFF; /* White background */
+            color: #333333; /* Dark gray text */
+        }
+        #about h2 {
+            color: #FF4500; /* Primary color for headings */
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #222222; /* Dark gray */
+            color: #FFFFFF;
+        }
+        footer h5 {
+            color: #FFD700; /* Accent yellow for subheadings */
+        }
+        footer a {
+            color: #FFD700; /* Accent for links */
+        }
+        footer a:hover {
+            color: #FF4500; /* Primary on hover */
+        }
+        
+        /* General Buttons (if you add any) */
+        .btn-primary {
+            background-color: #FF4500;
+            border-color: #FF4500;
+        }
+        .btn-primary:hover {
+            background-color: #FFD700;
+            border-color: #FFD700;
+            color: #333333;
+        }
+        
+        /* Cards (for menu items if added later) */
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #FF4500;
+        }
+        .card-title {
+            color: #FF4500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="D:\Divya Sai Fast-Foods\project\images\logo1.jpg" alt="Fast Food Chain Logo" style="height: 60px; margin-right: 10px;"><b><i>
+                Divya Sai Fast Food </b></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="s3.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="orderform.html">Order Now</a>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="text-center mb-4">Login to Your Account</h2>
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Remember Me</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Login</button>
+                            </form>
+                            <p class="text-center mt-3">
+                                <a href="reset-password.html">Forgot Password?</a>
+                            </p>
+                            <p class="text-center">
+                                Don't have an account? <a href="registration.html">Register Here</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center mb-3">
+                    <img src="D:\Divya Sai Fast-Foods\project\images\logo1.jpg" alt="Fast Food Chain Logo" class="img-fluid" style="max-height: 120px;">
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <h5>Contact Us</h5>
+                    <p>+91 9553337293<br>Email: divyasai21@gmail.com</p>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <h5>Address</h5>
+                    <p>gonthinavanipalem<br>Visakhapatnam, Andhra Pradesh, 530026</p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2004 Fast Food Chain. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Here you can add validation or AJAX call for actual login
+            // For now, just redirect to home.html
+            window.location.href = 'home.html';
+        });
+    </script>
+</body>
+</html>

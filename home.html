@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast-Food Menu & Ordering</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        /* Navbar */
+        .navbar {
+            background-color: #050219; /* Primary red-orange */
+            color: #FFFFFF; /* White text */
+        }
+        .navbar-brand {
+            color: #FFFFFF !important;
+        }
+        .nav-link {
+            color: #FFFFFF !important;
+        }
+        .nav-link:hover {
+            color: #FFD700 !important; /* Accent yellow on hover */
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-color: #F8F8F8; /* Light gray background */
+            position: relative;
+        }
+        .hero h1 {
+            color: #eeebf2; /* Primary color for title */
+            font-weight: bold;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .carousel-caption h5 {
+            color: #FFFFFF; /* White for captions */
+            background-color: rgba(255, 69, 0, 0.8); /* Semi-transparent primary for readability */
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .carousel-caption p {
+            color: #FFFFFF;
+        }
+        
+        /* About Us Section */
+        #about {
+            background-color: #FFFFFF; /* White background */
+            color: #333333; /* Dark gray text */
+        }
+        #about h2 {
+            color: #FF4500; /* Primary color for headings */
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #222222; /* Dark gray */
+            color: #FFFFFF;
+        }
+        footer h5 {
+            color: #FFD700; /* Accent yellow for subheadings */
+        }
+        footer a {
+            color: #FFD700; /* Accent for links */
+        }
+        footer a:hover {
+            color: #FF4500; /* Primary on hover */
+        }
+        
+        /* General Buttons (if you add any) */
+        .btn-primary {
+            background-color: #FF4500;
+            border-color: #FF4500;
+        }
+        .btn-primary:hover {
+            background-color: #FFD700;
+            border-color: #FFD700;
+            color: #333333;
+        }
+        
+        /* Cards (for menu items if added later) */
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #FF4500;
+        }
+        .card-title {
+            color: #FF4500;
+        }
+    </style>
+</head>
+<body>
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="D:\Divya Sai Fast-Foods\project\images\logo1.jpg" alt="Fast-Food Chain Logo" style="height: 60px; margin-right: 10px;"><b><i>
+            Divya Sai Fast-Food </b></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <a class="nav-item"><a class="nav-link" href="home.html">Home</a>
+                <a class="nav-item"><a class="nav-link" href="s3.html">Menu</a>
+                <a class="nav-item"><a class="nav-link" href="orderform.html">Order Now</a>
+                <a class="nav-item"><a class="nav-link" href="login.html">Login</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section with Carousel -->
+<section class="hero" style="height: 100vh; width: 100vw; padding: 0; margin: 0; overflow: hidden;">
+    <div class="container-fluid" style="height: 100%; padding: 0;">
+        <h1 class="text-center mb-4" style="position: absolute; top: 20%; left: 50%; transform: translateX(-50%); z-index: 10; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Welcome to Divya Sai Fast-Food</h1>
+        <div id="foodCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 100%;">
+            <div class="carousel-indicators" style="bottom: 20px;">
+                <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#foodCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="height: 100%;">
+                <div class="carousel-item active" style="height: 100%;">
+                    <img src="D:\Divya Sai Fast-Foods\project\images\carousel 1.jpg" class="d-block" style="width: 100%; height: 100%; object-fit: cover;" alt="Noodles">
+                    <div class="carousel-caption d-none d-md-block" style="bottom: 40px;">
+                        <h5>Authentic Noodles</h5>
+                        <p>Try our variety of flavorful noodles.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height: 100%;">
+                    <img src="D:\Divya Sai Fast-Foods\project\images\carousel2.jpg" class="d-block" style="width: 100%; height: 100%; object-fit: cover;" alt="Fried Rice">
+                    <div class="carousel-caption d-none d-md-block" style="bottom: 40px;">
+                        <h5>Perfect Fried Rice</h5>
+                        <p>Enjoy our crispy and delicious fried rice options.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height: 100%;">
+                    <img src="D:\Divya Sai Fast-Foods\project\images\carousel3.jpg" class="d-block" style="width: 100%; height: 100%; object-fit: cover;" alt="Burgers">
+                    <div class="carousel-caption d-none d-md-block" style="bottom: 40px;">
+                        <h5>Juicy Sandwich</h5>
+                        <p>Indulge in our mouth-watering burgers.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- About Us -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Welcome to Online Fast-Food Ordering Websites, a renowned Fast-Food chain established in 2004 in the vibrant city of Visakhapatnam, Andhra Pradesh. As one of the most famous restaurants in the region, we have been delighting customers for over two decades with our commitment to flavor, quality, and convenience.</p>
+                <p>Our journey began with a passion for authentic Indian and fusion cuisine, evolving into a beloved spot known for its diverse menu. From our signature authentic noodles and crispy fried rice to juicy burgers, refreshing milkshakes, and innovative rolls, every dish is crafted with fresh, locally sourced ingredients. We pride ourselves on our fast service, hygienic preparation, and a warm, welcoming atmosphere that makes every visit special.</p>
+                <p>Over the years, Online Fast-Food Ordering Websites has earned a loyal following, serving thousands of happy customers daily. We've been recognized for our excellence in taste and service, winning multiple local awards and featuring in food blogs and guides. Whether you're a local resident, a tourist exploring Visakhapatnam, or someone craving a quick, delicious meal, our team is dedicated to providing an unforgettable dining experience. Join us and discover why we're a Visakhapatnam favorite!</p>
+                <p>Founded by visionary entrepreneurs with a deep love for culinary arts, Online Fast-Food Ordering Websites started as a small eatery and grew through word-of-mouth recommendations and unwavering dedication to customer satisfaction. Our chefs, trained in both traditional Indian cooking and modern fusion techniques, experiment with bold flavors to create dishes that blend the best of both worlds. We believe in sustainability, partnering with local farmers to ensure our ingredients are not only fresh but also ethically sourced, supporting the community we serve.</p>
+                <p>Beyond our menu, we're committed to creating memorable moments for families, friends, and solo diners alike. Our outlets feature comfortable seating, free Wi-Fi, and a kids' play area to cater to all ages. We've expanded to multiple locations across Visakhapatnam while maintaining the same high standards that made us famous. Customer feedback drives our innovations, from seasonal specials to dietary accommodations like vegetarian, vegan, and gluten-free options.</p>
+                <p>As we look to the future, Online Fast-Food Ordering Websites aims to continue innovating while staying true to our roots. We're excited about upcoming collaborations with local artists for themed events and our plans to introduce eco-friendly packaging. Thank you for being part of our story—come experience the magic of Online Fast-Food Ordering Websites today!</p>
+            </div>
+            <div class="col-md-6">
+                <video autoplay muted loop class="img-fluid rounded" style="width: 100%; height: 100%; object-fit: cover;">
+                    <source src="D:\Divya Sai Fast-Foods\project\images\making.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <footer class="text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center mb-3">
+                <img src="D:\Divya Sai Fast-Foods\project\images\logo1.jpg" alt="Fast-Food Chain Logo" class="img-fluid" style="max-height: 120px;">
+            </div>
+            <div class="col-md-4 text-center mb-3">
+                <h5>Contact Us</h5>
+                <p>+91 9553337293<br>Email: divyasai21@gmail.com</p>
+            </div>
+            <div class="col-md-4 text-center mb-3">
+                <h5>Address</h5>
+              <p>gonthinavanipalem<br>Visakhapatnam, Andhra Pradesh, 530026</p>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; 2004 Fast-Food Chain. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
